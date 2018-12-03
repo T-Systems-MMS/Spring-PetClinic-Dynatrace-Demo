@@ -1,0 +1,20 @@
+{
+  "projectName": "PetClinic",
+  "enableStages": false,
+  "enableTimestamps": false,
+  "testTools": {
+    "JMeter": {
+      "agent": "docker",
+      "gitURL": "https://gitserver/petclinic_jmeter.git",
+      "dockerRegistryURL": "https://hub.docker.com",
+      "dockerRegistryCred": "dockerHubCredentials",
+      "dockerImageName": "jmeter_base:4.0",
+      "workload": "PFCA_PetClinic",
+      "SUT_Protocol": "http",
+      "SUT_Host": "localhost",
+      "SUT_Port": 8080,
+      "SUT_URL": "/",
+      "additionalParameter": "-JDuration=600"
+    }
+  }
+}

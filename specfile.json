@@ -1,0 +1,69 @@
+{
+  "lowerLimit": 1,
+  "upperLimit": 4,
+  "_comment": "global configuration environment-wide",
+  "timeseries": [
+    {
+      "timeseriesId": "com.dynatrace.builtin:service.responsetime",
+      "aggregation": "avg",
+      "tags": "Frontend",
+      "lowerLimit": 250000,
+      "upperLimit": 1000000
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:service.responsetime",
+      "aggregation": "avg",
+      "entityIds": "SERVICE-65778F58A66834D8",
+      "lowerLimit": 4000000,
+      "upperLimit": 8000000
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:docker.container.cpu",
+      "aggregation": "avg",
+      "lowerLimit": 50,
+      "upperLimit": 70
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:service.failurerate",
+      "aggregation": "avg",
+      "lowerLimit": 35,
+      "upperLimit": 40
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:service.requestspermin",
+      "aggregation": "min",
+      "lowerLimit": 5,
+      "upperLimit": 2
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:docker.container.memory",
+      "aggregation": "avg",
+      "lowerLimit": 1600000000,
+      "upperLimit": 1700000000
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:docker.container.running",
+      "aggregation": "avg",
+      "lowerLimit": 3,
+      "upperLimit": 4
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:host.mem.used",
+      "aggregation": "avg",
+      "lowerLimit": 3200000000,
+      "upperLimit": 4000000000
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:app.custom.apdex",
+      "aggregation": "count",
+      "lowerLimit": 3,
+      "upperLimit": 4
+    },
+    {
+      "timeseriesId": "com.dynatrace.builtin:appmethod.apdex",
+      "aggregation": "count",
+      "lowerLimit": 3,
+      "upperLimit": 4
+    }
+  ]
+}
